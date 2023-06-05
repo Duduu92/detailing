@@ -1,0 +1,418 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-padding-top: 90px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: $first-color;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+// NAV
+
+nav {
+	transition: background-color 0.6s;
+	z-index: 10;
+
+	.navbar-brand {
+		font-family: 'Pacifico', cursive;
+		font-size: 2rem;
+		font-weight: bold;
+		color: $second-color;
+	}
+
+	.navbar-brand:hover {
+		color: $second-color;
+	}
+
+	.navbar-toggler {
+		border: none;
+	}
+
+	.nav-link,
+	.fa-bars {
+		position: relative;
+		padding: 0.5em;
+		text-align: center;
+		text-transform: uppercase;
+		color: $third-color;
+		font-weight: bold;
+	}
+
+	.nav-link:hover {
+		color: $second-color;
+	}
+
+	.navbar-nav .nav-link.active {
+		color: $second-color;
+	}
+}
+
+// HEADER
+header {
+	color: $third-color;
+
+	h1 {
+		font-size: 2rem;
+		font-family: 'Pacifico', cursive;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/title\ pic-small.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -10;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 1.8em;
+		height: 100%;
+		z-index: 10;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		bottom: 20px;
+		font-size: 30px;
+		left: 50%;
+		transform: translate(-50%);
+		color: $third-color;
+	}
+}
+
+// SECTION
+// aboutme
+
+.title {
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size: 3rem;
+	color: $second-color;
+}
+
+.aboutme {
+	background-color: $fourth-color;
+	color: $third-color;
+
+	.text {
+		text-align: center;
+		color: $first-color;
+	}
+}
+
+// realizations
+
+.realizations {
+	background-color: $first-color;
+	padding-bottom: 2em;
+}
+// offer
+
+.offer {
+	background-color: $fourth-color;
+	padding-bottom: 2em;
+
+	.card {
+		border-radius: 5px;
+
+		.card-img-top {
+			height: 300px;
+		}
+
+		.card-body {
+			background-color: $fifth-color;
+			color: $third-color;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+}
+
+// contact
+.contact {
+	position: relative;
+	background-image: url('../img/hero-contact-small.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: $third-color;
+	z-index: 1;
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+
+	.contact-me {
+		align-items: center;
+	}
+
+	.contact-form-btn {
+		padding: 5px;
+		margin-bottom: 5px;
+		border: none;
+		border-radius: 5px;
+		background-color: $second-color;
+	}
+
+	.fa-brands {
+		margin: 10px;
+		padding: 10px;
+		font-size: 30px;
+		color: $third-color;
+	}
+
+	.fa-mobile-screen {
+		margin: 10px;
+		padding: 10px;
+		font-size: 30px;
+		color: $third-color;
+	}
+
+	.fa-brands:hover {
+		color: $second-color;
+	}
+
+	.fa-mobile-screen:hover {
+		color: $second-color;
+	}
+
+	.button {
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+}
+//FOOTER
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 3em;
+	text-align: center;
+	background-color: $first-color;
+	color: $third-color;
+}
+
+// MEDIA
+
+@media (min-width: 576px) {
+	// HEADER
+	header {
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			font-size: 1.8rem;
+		}
+	}
+	// SECTION
+
+	.title {
+		font-size: 3.8rem;
+	}
+	// aboutme
+	.text {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	// HEADER
+	header {
+		h1 {
+			font-size: 4.4rem;
+		}
+
+		p {
+			font-size: 2.2rem;
+		}
+	}
+
+	// realizations
+
+	.realizations {
+		padding-bottom: 2em;
+
+		img {
+			padding: 10px;
+			height: 500px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	nav {
+		.link,
+		.link::after,
+		.link::before {
+			transition: 0.3s;
+		}
+
+		.link-effect::before,
+		.link-effect::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+		}
+
+		.link-effect::before {
+			top: -1px;
+			left: -1px;
+			border-top: 0 solid $second-color;
+			border-left: 0 solid $second-color;
+		}
+		.link-effect::after {
+			bottom: -1px;
+			right: -1px;
+			border-bottom: 0 solid $second-color;
+			border-right: 0 solid $second-color;
+		}
+
+		.link-effect:hover::before,
+		.link-effect:hover::after {
+			width: 50px;
+			height: 50%;
+		}
+
+		.link-effect:hover::before {
+			border-top: 1px solid $second-color;
+			border-left: 1px solid $second-color;
+		}
+
+		.link-effect:hover::after {
+			border-bottom: 1px solid $second-color;
+			border-right: 1px solid $second-color;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	// SECTION
+	.title {
+		font-size: 4.4rem;
+	}
+	// aboutme
+	.text {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 1200px) {
+	// HEADER
+	header {
+		h1 {
+			font-size: 5rem;
+		}
+
+		p {
+			font-size: 2.8rem;
+		}
+
+		
+
+		.video-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+		}
+
+		.video-container video {
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	// SECTION
+	.title {
+		font-size: 4.8rem;
+	}
+	// aboutme
+	.aboutme {
+		.aboutme-pic {
+			content: url('../img/about\ me-big.jpg');
+		}
+	}
+
+	.text {
+		font-size: 1.6rem;
+	}
+
+	// realizations
+
+	.realizations {
+		.first {
+			content: url('../img/porsche-big.jpg');
+			height: 40em;
+		}
+		.second {
+			content: url('../img/gtr-big.jpg');
+			height: 40em;
+		}
+		.third {
+			content: url('../img/merc-big.jpg');
+			height: 40em;
+		}
+		.fourth {
+			content: url('../img/wash-big.jpg');
+			height: 40em;
+		}
+		.fifth {
+			content: url('../img/interior-big.jpg');
+			height: 40em;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.video-container video {
+		display: none;
+	}
+}
