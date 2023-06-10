@@ -44,7 +44,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<!-- <a class="nav-link active" href="#">Home</a> -->
 						<a class="nav-link link link-effect" href="#aboutme">o mnie</a>
 						<a class="nav-link link link-effect" href="#realizations"
 							>realizacje</a
@@ -77,15 +76,15 @@
 		<main>
 			<section id="aboutme" class="aboutme py-5">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
+					<div class="row d-flex">
+						<div class="col-lg-6 picture">
 							<img
-								src="./img/about me-small.jpg"
-								class="aboutme-pic img-fluid"
+								src="./img/about-me-small.jpg"
+								class="aboutme-pic"
 								alt="mężczyzna polerujący czerwone auto"
 							/>
 						</div>
-						<div class="col-md-6">
+						<div class="col-lg-6 textarea">
 							<h2 class="title py-3">o mnie</h2>
 							<p class="text">
 								Witaj w naszym jednoosobowym studiu detailingowym,
@@ -253,68 +252,62 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="offer" class="offer">
 				<div class="container">
 					<h2 class="title py-3">oferta</h2>
-					<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-						<div class="col">
-							<div class="card h-100 d-flex">
-								<img
-									src="./img/wash-small.jpg"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">
-										This is a longer card with supporting text below as a
-										natural lead-in to additional content.
-									</p>
-								</div>
+					<div class="row">
+						<div class="card">
+							<div class="img one"></div>
+							<div class="text">
+								<h3>Kompleksowe mycie i czyszczenie pojazdu</h3>
+								<p>
+									Oferujemy profesjonalne mycie zewnętrzne i wewnętrzne, usuwanie brudu, plam i osadów, czyszczenie tapicerki, dywaników, plastików oraz szyb. Twoje auto będzie wyglądało świeżo i pachnąco.
+								</p>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card h-100 d-flex">
-								<img
-									src="./img/polish - small.jpg"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">
-										This is a longer card with supporting text below as a
-										natural lead-in to additional content.
-									</p>
-								</div>
+					</div>
+					<div class="row">
+						<div class="card">
+							<div class="img two"></div>
+							<div class="text">
+								<h3>Polerowanie lakieru</h3>
+								<p>
+									Wykorzystujemy zaawansowane techniki i produkty polerskie, aby usunąć rysy, hologramy i wady powierzchniowe, przywracając oryginalny blask lakieru. Twój pojazd będzie wyglądał jak nowy.
+								</p>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card h-100 d-flex">
-								<img src="./img/PFF-small.jpg" class="card-img-top" alt="..." />
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">
-										This is a longer card with supporting text below as a
-										natural lead-in to additional content.
-									</p>
-								</div>
+					</div>
+					<div class="row">
+						<div class="card">
+							<div class="img three"></div>
+							<div class="text">
+								<h3>Zabezpieczenie powłoką ochronną</h3>
+								<p>
+									Oferujemy nanoszenie wysokiej jakości powłok ochronnych, które chronią lakier przed uszkodzeniami, korozją, promieniowaniem UV i zanieczyszczeniami. Twój pojazd będzie chroniony i łatwiejszy do utrzymania w czystości.
+								</p>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card h-100 d-flex">
-								<img
-									src="./img/interior-small.jpg"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">
-										This is a longer card with supporting text below as a
-										natural lead-in to additional content.
-									</p>
-								</div>
+					</div>
+					<div class="row">
+						<div class="card">
+							<div class="img four"></div>
+							<div class="text">
+								<h3>Pielęgnacja skóry i plastików oraz ich renowacja</h3>
+								<p>
+									Oferujemy profesjonalną pielęgnację skóry, która przywraca jej elastyczność i miękkość, usuwa zabrudzenia i chroni przed starzeniem się. Dodatkowo, oferujemy czyszczenie, ochronę i odświeżanie plastikowych elementów wnętrza.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card">
+							<div class="img five"></div>
+							<div class="text">
+								<h3>Usługi dodatkowe</h3>
+								<p>
+									Oferujemy również szereg usług dodatkowych, takich jak renowacja reflektorów, czyszczenie i zabezpieczanie dachów panoramicznych, usuwanie nalotu z elementów chromowanych i wiele więcej.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -323,9 +316,19 @@
 			<section id="contact" class="contact">
 				<h2 class="title py-3">kontakt</h2>
 				<div class="container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.956087454811!2d20.35601070803486!3d51.140976987526116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719ceebf2eadacf%3A0x2e04a43118d2b350!2sWincent%C3%B3w%2027J%2C%2026-200%20Wincent%C3%B3w!5e0!3m2!1spl!2spl!4v1686335531392!5m2!1spl!2spl"
+						width="100%"
+						height="300"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						class="mb-4"
+					></iframe>
 					<div class="row text-center contact-me d-flex justify-content-center">
 						<form class="contact-form col-lg-6">
-							<div class="mb-3">
+							<div class="mb-4">
 								<label
 									for="exampleFormControlInput1"
 									class="contact-form-label d-flex justify-content-start"
@@ -337,7 +340,7 @@
 									id="exampleFormControlInput1"
 								/>
 							</div>
-							<div class="mb-3">
+							<div class="mb-4">
 								<label
 									for="exampleFormControlInput2"
 									class="contact-form-label d-flex justify-content-start"
@@ -349,7 +352,7 @@
 									id="exampleFormControlInput2"
 								/>
 							</div>
-							<div class="mb-3">
+							<div class="mb-4">
 								<label
 									for="exampleFormControlTextarea1"
 									class="contact-form-label d-flex justify-content-start"
@@ -362,7 +365,9 @@
 								></textarea>
 							</div>
 							<div class="button d-flex justify-content-end">
-								<button type="submit" class="contact-form-btn">Wyślij</button>
+								<button type="submit" class="contact-form-btn p-2">
+									Wyślij
+								</button>
 							</div>
 						</form>
 						<div class="contact-item col-lg-6">
